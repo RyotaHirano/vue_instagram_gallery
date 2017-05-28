@@ -8,7 +8,7 @@ const rootResolve = pathname => resolve(__dirname, pathname);
 module.exports = {
   entry: './src/js/main.js',
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'public'),
     publicPath: '',  // Webpackのプラグインが利用するもの
     filename: 'assets/js/[name].js'
   },
@@ -30,7 +30,7 @@ module.exports = {
       template: `${rootResolve('src/html/index.pug')}`,
     }),
     new ExtractTextPlugin({
-      filename: 'assets/css/style.css'
+      filename: 'assets/css/style.[hash].css'
     })
   ],
   module: {

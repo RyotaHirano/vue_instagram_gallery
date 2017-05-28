@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './components/App'
+import '../css/style.scss'
 
 import fetchInstagram from './modules/fetchInstagram'
 

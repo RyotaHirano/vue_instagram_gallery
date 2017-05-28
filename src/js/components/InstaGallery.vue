@@ -10,11 +10,3 @@
 
   }
 </script>
-
-<style lang="scss" scoped>
-  .gallery {
-    p {
-      color: red;
-    }
-  }
-</style>
