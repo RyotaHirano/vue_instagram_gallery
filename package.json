@@ -2,7 +2,7 @@
   "name": "insta_test",
   "scripts": {
     "start": "webpack-dev-server --progress --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "rm -rf ./public && cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "engines": {
     "node": "~6.10.2"
