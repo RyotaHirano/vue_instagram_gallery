@@ -17,13 +17,15 @@ module.exports = {
   },
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.js',
+      'vue$': 'vue/dist/vue.common.js',
     },
     extensions: ['.js', '.scss', '.sass', '.vue'],
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'process.env': {
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }
     }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({

@@ -49,3 +49,6 @@ pull.php
 dst
 build
 !.editorconfig
+
+/src/js/setting.js
+/public/

@@ -1,9 +1,8 @@
 <template>
-  <div class="gallery">
-    <ul
-      v-for="item, key in this.fetchItems"
-    >
+  <div class="p-gallery">
+    <ul class="c-instagram-gallery">
       <InstaItem
+        v-for="item, key in this.fetchItems"
         :item=item
         :key="key"
       ></InstaItem>
@@ -14,6 +13,7 @@
 <script>
   import { fetchInstagram } from '../modules/fetchInstagram'
   import InstaItem from './InstaItem'
+  import '../../css/object/component/instagram-gallery'
 
   export default {
     name: 'InstaGallery',
