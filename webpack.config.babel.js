@@ -32,7 +32,9 @@ module.exports = {
       template: `${rootResolve('src/html/index.pug')}`,
     }),
     new ExtractTextPlugin({
-      filename: 'assets/css/style.[hash].css'
+      filename: 'assets/css/style.[hash].css',
+      disable: process.env.NODE_ENV !== 'production',
+      allChunks: true
     })
   ],
   module: {
@@ -41,23 +43,24 @@ module.exports = {
       {
         test: /\.pug$/,
         exclude: /node_modules/,
-        loader: 'pug-loader'
+        use: 'pug-loader'
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        use: 'vue-loader'
       },
       {
         test: /\.js$/,
         exclude: /node_modules|vue\/dist|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
-        loader: 'babel-loader'
+        use: 'babel-loader'
       },
       {
-        test: /\.(scss|sass)$/,
-        loader: ExtractTextPlugin.extract({
-          fallbackLoader: "style-loader",
-          loader: [
+        test: /\.(css|scss|sass)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: [
             'css-loader',
+            'sass-loader',
             'postcss-loader'
           ]
         })
