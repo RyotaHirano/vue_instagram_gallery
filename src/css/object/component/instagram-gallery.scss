@@ -1,12 +1,21 @@
 .c-instagram-gallery {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .c-instagram-gallery__item {
+  width: 33.33%;
+  font-size: 0;
+  
+  a {
+    display: block;
+    &:hover {
+      //filter: blur(2px);
+    }
+  }
+  
   img {
-    width: 320px;
-    height: 320px;
+    width: 100%;
   }
 }
