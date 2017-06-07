@@ -2,4 +2,4 @@
 
 > vue.js + Instagram PhotoGallery Mock.
 
-> vue, webpack, InstagramAPI
+ vue, webpack, InstagramAPI

@@ -12,10 +12,7 @@ module.exports = {
         ]
       }
     ),
-    require('precss')(),
     require('postcss-flexbugs-fixes'),
-    require('postcss-partial-import')(),
-    require('postcss-nested'),
     require('css-mqpacker')({ sort: function (a, b) { return b.localeCompare(a); } })
   ]
 }
