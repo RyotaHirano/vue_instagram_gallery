@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin'); // cssを別ファイルで生成するため
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 import { resolve } from 'path';
 const rootResolve = pathname => resolve(__dirname, pathname);
 
@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    publicPath: '',  // Webpackのプラグインが利用するもの
+    publicPath: '',
     filename: 'assets/js/[name].js'
   },
   externals: {
