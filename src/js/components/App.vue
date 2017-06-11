@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <section class="section">
-      <h1>Vue Insta</h1>
       <InstaGallery
       ></InstaGallery>
     </section>
