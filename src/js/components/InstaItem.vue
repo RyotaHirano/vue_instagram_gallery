@@ -6,7 +6,7 @@
         v-bind:src="this.item.images.standard_resolution.url"
       >
       <div
-        class="c-instagram-item-hoverd"
+        class="c-instagram-item-hovered"
       >
         <span>
           {{ this.item.likes.count }} likes
