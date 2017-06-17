@@ -32,7 +32,8 @@
       left: 0;
       font-size: 14px;
       color: #000;
-      visibility: hidden;
+      opacity: 0;
+      transition: opacity .4s ease;
     }
 
     &::before {
@@ -53,6 +54,10 @@
     .c-instagram-item-hover {
       &::before {
         opacity: .7;
+      }
+
+      span {
+        opacity: 1;
       }
     }
   }
