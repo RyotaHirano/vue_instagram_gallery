@@ -1,5 +1,5 @@
 <template>
-  <li class="c-instagram-item">
+  <li class="c-instagram-item" :class="itemClassObject">
     <span>{{ this.item }}</span>
     <a v-bind:href="this.item.link" target="_blank">
       <img
@@ -17,11 +17,44 @@
 </template>
 
 <script>
-
   export default {
     name: 'InstaItem',
     props: {
       item: Object
+    },
+    data: function() {
+      return {
+        windowHeight: 0,
+        windowScrollTop: 0,
+        offsetTop: 0,
+        offsetHeight: 0,
+      }
+    },
+    mounted() {
+      this.windowHeight = window.innerHeight
+      this.windowScrollTop = window.scrollY
+      this.offsetTop = this.$el.offsetTop
+      this.offsetHeight = this.$el.offsetHeight
+      window.addEventListener('scroll', this.handleScroll)
+    },
+    computed: {
+      itemClassObject: function() {
+        return {
+          'show': this.isShow()
+        }
+      },
+    },
+    methods: {
+      handleScroll() {
+        this.windowScrollTop = window.scrollY
+        this.isShow() ? this.destroyHandleScroll() : null
+      },
+      isShow() {
+        return this.windowScrollTop + this.windowHeight > this.offsetTop
+      },
+      destroyHandleScroll() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
     }
   }
 </script>
