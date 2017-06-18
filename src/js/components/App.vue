@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <section class="section">
-      <InstaGallery
-      ></InstaGallery>
-    </section>
+    <InstaGallery
+    ></InstaGallery>
   </div>
 </template>
 
