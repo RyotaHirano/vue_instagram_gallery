@@ -4,6 +4,7 @@
       <InstaItem
         v-for="item, key in this.fetchItems"
         :item=item
+        :data-index="key"
         :key="key"
       ></InstaItem>
     </ul>
