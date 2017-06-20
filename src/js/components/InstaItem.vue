@@ -1,9 +1,9 @@
 <template>
   <li class="c-instagram-item" :class="itemClassObject">
     <span>{{ this.item }}</span>
-    <a v-bind:href="this.item.link" target="_blank">
+    <a :href="this.item.link" target="_blank">
       <img
-        v-bind:src="this.item.images.standard_resolution.url"
+        :src="this.item.images.standard_resolution.url"
       >
       <div
         class="c-instagram-item-hover"
