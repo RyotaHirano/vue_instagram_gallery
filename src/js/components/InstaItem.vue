@@ -26,8 +26,8 @@
       return {
         windowHeight: 0,
         windowScrollTop: 0,
-        offsetTop: 0,
         offsetHeight: 0,
+        offsetTop: 0,
       }
     },
     mounted() {
@@ -47,7 +47,9 @@
     methods: {
       handleScroll() {
         this.windowScrollTop = window.scrollY
-        this.isShow() ? this.destroyHandleScroll() : null
+        if (this.isShow() === true) {
+          this.destroyHandleScroll()
+        }
       },
       isShow() {
         return this.windowScrollTop + this.windowHeight > this.offsetTop

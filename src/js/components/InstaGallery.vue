@@ -3,9 +3,9 @@
     <ul class="c-instagram-gallery">
       <InstaItem
         v-for="item, key in this.fetchItems"
+        :key="key"
         :item=item
         :data-index="key"
-        :key="key"
       ></InstaItem>
     </ul>
   </div>
