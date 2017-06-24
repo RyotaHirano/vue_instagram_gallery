@@ -14,8 +14,6 @@
 <script>
   import { fetchInstagram } from '../modules/fetchInstagram'
   import InstaItem from './InstaItem'
-  import '../../css/object/project/gallery'
-  import '../../css/object/component/instagram-gallery'
 
   export default {
     name: 'InstaGallery',
