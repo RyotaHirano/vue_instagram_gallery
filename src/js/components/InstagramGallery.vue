@@ -1,22 +1,22 @@
 <template>
   <div class="p-gallery">
     <ul class="c-instagram-gallery">
-      <InstaItem
+      <InstagramItem
         v-for="item, key in this.fetchItems"
         :key="key"
         :item=item
         :data-index="key"
-      ></InstaItem>
+      ></InstagramItem>
     </ul>
   </div>
 </template>
 
 <script>
   import { fetchInstagram } from '../modules/fetchInstagram'
-  import InstaItem from './InstaItem'
+  import InstagramItem from './InstagramItem'
 
   export default {
-    name: 'InstaGallery',
+    name: 'InstagramGallery',
     data() {
       return {
         fetchItems: []
@@ -28,7 +28,7 @@
       })
     },
     components: {
-      InstaItem
+      InstagramItem
     }
   }
 </script>

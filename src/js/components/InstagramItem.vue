@@ -18,7 +18,7 @@
 
 <script>
   export default {
-    name: 'InstaItem',
+    name: 'InstagramItem',
     props: {
       item: Object
     },

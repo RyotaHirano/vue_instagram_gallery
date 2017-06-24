@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <InstaGallery
-    ></InstaGallery>
+    <InstagramGallery
+    ></InstagramGallery>
   </div>
 </template>
 
 <script>
-  import InstaGallery from './InstaGallery'
+  import InstagramGallery from './InstagramGallery'
 
   export default {
     name: 'app',
     components: {
-      InstaGallery
+      InstagramGallery
     }
   }
 </script>
