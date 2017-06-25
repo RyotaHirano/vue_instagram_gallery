@@ -1,5 +1,10 @@
 # vue instagram gallery mock
+vue.js + Instagram PhotoGallery Mock.
+ 
+### How to use
 
-> vue.js + Instagram PhotoGallery Mock.
-
- vue, webpack, InstagramAPI
+Please write Instagram Access Token in `/src/js/setting.js`.
+>/src/js/setting.js
+```setting.js
+export const ACCESS_TOKEN = 'yourInstagramAccessToken...'
+```
