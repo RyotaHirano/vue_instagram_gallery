@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+// Foundation
 @import './foundation/reset.scss';
 
+// Layout
 @import './layout/header.scss';
 
+// Object
 @import './object/project/gallery';
 @import './object/component/instagram-gallery';
+@import './object/component/instagram-item';
