@@ -55,6 +55,14 @@ module.exports = {
         use: 'babel-loader'
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'eslint-loader',
+        options: {
+          failOnError: true
+        }
+      },
+      {
         test: /\.(css|scss|sass)$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
