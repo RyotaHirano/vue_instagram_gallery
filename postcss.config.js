@@ -15,4 +15,4 @@ module.exports = {
     require('postcss-flexbugs-fixes'),
     require('css-mqpacker')({ sort: function (a, b) { return b.localeCompare(a); } })
   ]
-}
+};

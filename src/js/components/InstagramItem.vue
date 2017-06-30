@@ -31,10 +31,10 @@
       }
     },
     mounted() {
-      this.windowHeight = window.innerHeight
-      this.windowScrollTop = window.scrollY
-      this.offsetTop = this.$el.offsetTop
-      this.offsetHeight = this.$el.offsetHeight
+      this.windowHeight = window.innerHeight;
+      this.windowScrollTop = window.scrollY;
+      this.offsetTop = this.$el.offsetTop;
+      this.offsetHeight = this.$el.offsetHeight;
       window.addEventListener('scroll', this.handleScroll)
     },
     computed: {
@@ -46,7 +46,7 @@
     },
     methods: {
       handleScroll() {
-        this.windowScrollTop = window.scrollY
+        this.windowScrollTop = window.scrollY;
         if (this.isShow() === true) {
           this.destroyHandleScroll()
         }

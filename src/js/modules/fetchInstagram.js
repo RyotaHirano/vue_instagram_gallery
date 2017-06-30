@@ -6,4 +6,4 @@ export const fetchInstagram = $.ajax(
   {
     dataType: 'jsonp',
   }
-)
+);
