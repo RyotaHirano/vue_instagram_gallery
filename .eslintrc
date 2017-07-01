@@ -4,8 +4,10 @@
   "plugins": [
     "babel"
   ],
-  "ecmaFeatures": {
-    "modules": true
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    }
   },
   "env": {
     "es6": true,
