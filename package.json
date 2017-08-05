@@ -1,12 +1,12 @@
 {
   "name": "vue_instagram_gallery_mock",
   "scripts": {
-    "start": "webpack-dev-server --progress --hot",
+    "start": "webpack-dev-server --progress --hot --open",
     "clean": "rm -rf ./public",
     "build": "yarn run clean && cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "engines": {
-    "node": "~6.10.2"
+    "node": ">=6.11.2"
   },
   "private": true,
   "devDependencies": {

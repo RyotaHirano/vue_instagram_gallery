@@ -8,3 +8,6 @@ Please write Instagram Access Token in `/src/js/setting.js`.
 ```setting.js
 export const ACCESS_TOKEN = 'yourInstagramAccessToken...'
 ```
+
+### TODO
+* remove jquery.
