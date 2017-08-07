@@ -8,7 +8,7 @@ module.exports = {
           'last 2 Chrome versions',
           'last 2 Safari versions',
           'iOS >= 8',
-          'Android >= 4.0'
+          'Android >= 4.4'
         ]
       }
     ),
