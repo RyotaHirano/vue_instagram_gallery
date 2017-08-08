@@ -33,16 +33,16 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "vue-html-loader": "^1.2.4",
-    "vue-loader": "^12.2.1",
+    "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.3.4",
-    "webpack": "3.0.0",
-    "webpack-dev-server": "^2.5.0"
+    "vue-template-compiler": "^2.4.2",
+    "webpack": "^3.5.1",
+    "webpack-dev-server": "^2.7.0"
   },
   "dependencies": {
     "jquery": "^3.2.1",
     "sanitize.css": "^5.0.0",
-    "vue": "^2.3.4",
-    "webpack-dev-middleware": "^1.10.2"
+    "vue": "^2.4.2",
+    "webpack-dev-middleware": "^1.12.0"
   }
 }
