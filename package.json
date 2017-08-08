@@ -1,5 +1,5 @@
 {
-  "name": "vue_instagram_gallery_mock",
+  "name": "vue_instagram_gallery",
   "scripts": {
     "start": "webpack-dev-server --progress --hot --open",
     "clean": "rm -rf ./public",

@@ -1,5 +1,5 @@
-# vue instagram gallery mock
-vue.js + Instagram PhotoGallery Mock.
+# vue instagram gallery
+vue.js + Instagram PhotoGallery.
  
 ### How to use
 
