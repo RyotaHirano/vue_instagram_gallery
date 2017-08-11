@@ -26,7 +26,6 @@
       return {
         windowHeight: 0,
         windowScrollTop: 0,
-        offsetHeight: 0,
         offsetTop: 0,
       }
     },
@@ -34,7 +33,6 @@
       this.windowHeight = window.innerHeight;
       this.windowScrollTop = window.scrollY;
       this.offsetTop = this.$el.offsetTop;
-      this.offsetHeight = this.$el.offsetHeight;
       window.addEventListener('scroll', this.handleScroll)
     },
     computed: {
