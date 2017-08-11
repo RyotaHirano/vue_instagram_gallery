@@ -64,9 +64,9 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: [
-            'css-loader',
+            { loader: 'css-loader', options: { importLoaders: 2 } },
+            'postcss-loader',
             'sass-loader',
-            'postcss-loader'
           ]
         })
       }
