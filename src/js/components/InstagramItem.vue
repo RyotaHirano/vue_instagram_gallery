@@ -31,7 +31,7 @@
     },
     mounted() {
       this.windowHeight = window.innerHeight;
-      this.windowScrollTop = window.scrollY;
+      this.windowScrollTop = window.pageYOffset;
       this.offsetTop = this.$el.offsetTop;
       window.addEventListener('scroll', this.handleScroll)
     },
@@ -44,7 +44,7 @@
     },
     methods: {
       handleScroll() {
-        this.windowScrollTop = window.scrollY;
+        this.windowScrollTop = window.pageYOffset;
         if (this.isShow() === true) {
           this.destroyHandleScroll()
         }
