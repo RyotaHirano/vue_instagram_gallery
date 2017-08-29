@@ -17,6 +17,7 @@
     "mocha": true
   },
   "globals": {
+    "jest": true,
     "google": true
   },
   "rules": {
