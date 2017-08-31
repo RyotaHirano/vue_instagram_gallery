@@ -4,7 +4,7 @@
     "start": "webpack-dev-server --progress --hot --open",
     "clean": "rm -rf ./public",
     "build": "yarn run clean && cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "test": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "engines": {
     "node": ">=6.11.2"
@@ -50,5 +50,15 @@
     "sanitize.css": "^5.0.0",
     "vue": "^2.4.2",
     "webpack-dev-middleware": "^1.12.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
   }
 }
