@@ -1,6 +1,5 @@
 <template>
   <li class="c-instagram-item" :class="itemClassObject">
-    <span>{{ this.item }}</span>
     <a :href="this.item.link" target="_blank">
       <img
         :src="this.item.images.standard_resolution.url"
