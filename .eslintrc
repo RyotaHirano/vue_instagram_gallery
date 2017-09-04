@@ -2,7 +2,8 @@
   "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "plugins": [
-    "babel"
+    "babel",
+    "jest"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -14,10 +15,10 @@
     "browser": true,
     "commonjs": true,
     "node": true,
-    "mocha": true
+    "mocha": true,
+    "jest/globals": true
   },
   "globals": {
-    "jest": true,
     "google": true
   },
   "rules": {
