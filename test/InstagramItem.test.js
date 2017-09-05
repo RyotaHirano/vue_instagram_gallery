@@ -33,9 +33,11 @@ describe('Test suite for InstagramItem', () => {
     renderer.renderToString(testComponent, (err, str) => {
       const dom = new jsdom.JSDOM(str)
       const targetEl = dom.window.document.querySelector('.c-instagram-item')
+
       expect(targetEl.classList.contains('show')).toBeTruthy()
       expect(targetEl.querySelector('img').src).toContain('dummy.jpg')
       expect(targetEl.querySelector('span').textContent).toContain('10 likes')
+      expect(targetEl.querySelector('a').href).toContain('http://localhost')
     })
   })
 })
