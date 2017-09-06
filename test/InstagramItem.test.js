@@ -35,9 +35,9 @@ describe('Test suite for InstagramItem', () => {
       const targetEl = dom.window.document.querySelector('.c-instagram-item')
 
       expect(targetEl.classList.contains('show')).toBeTruthy()
-      expect(targetEl.querySelector('img').src).toContain('dummy.jpg')
-      expect(targetEl.querySelector('span').textContent).toContain('10 likes')
-      expect(targetEl.querySelector('a').href).toContain('http://localhost')
+      expect(targetEl.querySelector('img').src).toMatch(/dummy.jpg/)
+      expect(targetEl.querySelector('span').textContent).toMatch(/10 likes/)
+      expect(targetEl.querySelector('a').href).toMatch(/http:\/\/localhost/)
     })
   })
 })
