@@ -24,6 +24,7 @@
   "rules": {
     "no-var": 2,
     "prefer-const": 2,
-    "no-console": 1
+    "no-console": 1,
+    "no-unused-vars": 0
   }
 }
