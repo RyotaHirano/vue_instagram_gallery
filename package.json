@@ -3,7 +3,7 @@
   "scripts": {
     "start": "webpack-dev-server --progress --hot --open",
     "clean": "rm -rf ./public",
-    "build": "yarn run clean && cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build": "yarn run clean && NODE_ENV=production webpack --progress --hide-modules",
     "test": "./node_modules/.bin/jest"
   },
   "engines": {
