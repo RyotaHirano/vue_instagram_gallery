@@ -1,3 +1,4 @@
 linter:
-  options:
-    config: '.eslintrc'
+  eslint:
+    options:
+      config: '.eslintrc'
