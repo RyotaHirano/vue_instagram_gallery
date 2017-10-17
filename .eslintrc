@@ -23,7 +23,7 @@
   },
   "rules": {
     "no-var": "error",
-    "prefer-const": "error",
+    "prefer-const": "off",
     "no-console": "warn",
     "no-unused-vars": "off"
   }
