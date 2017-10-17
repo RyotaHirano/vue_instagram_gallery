@@ -1,4 +1,0 @@
-linter:
-  eslint:
-    options:
-      config: '.eslintrc'
