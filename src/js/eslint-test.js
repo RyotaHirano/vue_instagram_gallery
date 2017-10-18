@@ -1,1 +1,1 @@
-var test = 'ESLint Test1.'
+const test = 'ESLint Test1.'
