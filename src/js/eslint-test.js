@@ -1,2 +1,2 @@
-var test = 'ESLint Test1.'
-var test2 = 'ESLint Test2.'
+const test = 'ESLint Test1.'
+const test2 = 'ESLint Test2.'
