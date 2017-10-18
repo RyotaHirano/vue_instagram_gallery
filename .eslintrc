@@ -22,7 +22,7 @@
     "google": true
   },
   "rules": {
-    "no-var": "off",
+    "no-var": "error",
     "prefer-const": "error",
     "no-console": "warn",
     "no-unused-vars": "off"
